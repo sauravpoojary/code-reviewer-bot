@@ -15,12 +15,12 @@ An AI-powered code review tool that analyzes code for bugs, security issues, and
 ## Screenshots
 
 ### Code Input
-![Code Input UI](.\screenshots\reviewer.png)
+![Code Input UI](screenshots/reviewer.png)
 
 Paste your code, select the language, and click "Review Code" to get started.
 
 ### Review Results
-![Review Results UI](.\screenshots\fixer.png)
+![Review Results UI](screenshots/fixer.png)
 
 View detailed issues with severity, category, and explanations. Click "Fix all issues" to automatically correct problems.
 
