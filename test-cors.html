@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    fetch("http://localhost:8080/api/review", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        code: "fun test() { println(1) }",
+        language: "Kotlin"
+      })
+    })
+      .then(res => res.json())
+      .then(data => console.log("SUCCESS:", data))
+      .catch(err => console.error("FAILED:", err));
+</script>
+</body>
+</html>

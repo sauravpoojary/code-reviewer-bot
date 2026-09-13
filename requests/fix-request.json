@@ -1,0 +1,24 @@
+{
+  "code": "fun divide(a: Int, b: Int): Int {\n    return a / b\n}\n\nfun getUser(users: List<String>, index: Int): String {\n    return users[index]\n}\n\nfun processPassword(password: String) {\n    println(\"Processing password: \" + password)\n}",
+  "language": "Kotlin",
+  "issues": [
+    {
+      "function": "divide",
+      "severity": "MEDIUM",
+      "category": "BUG",
+      "explanation": "Does not handle division by zero, which will throw an ArithmeticException."
+    },
+    {
+      "function": "getUser",
+      "severity": "MEDIUM",
+      "category": "BUG",
+      "explanation": "Does not check if index is within bounds, which will throw an IndexOutOfBoundsException."
+    },
+    {
+      "function": "processPassword",
+      "severity": "HIGH",
+      "category": "SECURITY",
+      "explanation": "Logs the raw password to the console in plaintext, which is a security risk."
+    }
+  ]
+}
